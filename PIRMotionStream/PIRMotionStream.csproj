@@ -111,6 +111,7 @@
     <None Include="PIRMotionStream_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Photon\Photon.txt" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

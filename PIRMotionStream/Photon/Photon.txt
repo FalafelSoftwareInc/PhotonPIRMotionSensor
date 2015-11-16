@@ -1,0 +1,19 @@
+﻿#define PIRPIN A0
+int val;
+void setup() {
+
+}
+
+void loop() {
+    val = 0;
+    for(int i = 0; i < 100; i += 1)
+    {
+        int rval = analogRead(PIRPIN);
+        if (rval > val)
+        {
+            val = rval;
+        }
+        delay(10);
+    }
+    Particle.publish("Motion",String(val));
+}
